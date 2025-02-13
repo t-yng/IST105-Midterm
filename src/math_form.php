@@ -52,7 +52,7 @@
   </head>
   <body>
     <h1>Welcome to the Mathematical Application!</h1>
-    <p>This application is hosted on my EC2 instance with Public IP: </p>
+    <p>This application is hosted on my EC2 instance with Public IP: 18.212.159.224</p>
     <p>Please Enter two numbers and select an operation to calculate the result.
     <form action="/process_math.php" method="POST">
       <div class="form-group">
