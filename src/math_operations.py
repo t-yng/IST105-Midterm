@@ -15,23 +15,22 @@ operation = sys.argv[3]
 
 
 def math_operate(number1: int, number2: int, operation: str):
-    match operation:
-        case "Addition":
-            return number1 + number2
-        case "Subtraction":
-            return number1 - number2
-        case "Multiplication":
-            return number1 * number2
-        case "Division":
-            if number2 == 0:
-                print("Error: Number2 is must not be zero.")
-                exit(1)
-            else:
-                return number1 / number2
-        case _:
-            print("Error: You selected the unexpected operation.")
-            print(f"Operation: {operation}")
+    if operation == "Addition":
+        return number1 + number2
+    elif operation == "Subtraction":
+        return number1 - number2
+    elif operation == "Multiplication":
+        return number1 * number2
+    elif operation == "Division":
+        if number2 == 0:
+            print("Error: Number2 is must not be zero.")
             exit(1)
+        else:
+            return number1 / number2
+    else:
+        print("Error: You selected the unexpected operation.")
+        print(f"Operation: {operation}")
+        exit(1)
 
 
 def calc_additional(result: float):

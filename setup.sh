@@ -4,9 +4,7 @@ sudo dnf update -y
 # Install Python3
 echo ""
 echo "Start Install Python: "
-sudo dnf install python3.12 -y
-# Create command python3 links to python3.12
-sudo alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1
+sudo dnf install python3 -y
 python3 --version
 
 # Install PHP
