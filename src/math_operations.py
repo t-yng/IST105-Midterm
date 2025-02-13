@@ -34,5 +34,15 @@ def math_operate(number1: int, number2: int, operation: str):
             exit(1)
 
 
+def calc_additional(result: float):
+    if result > 100:
+        return result * 2
+    elif result < 0:
+        return result + 50
+    else:
+        return result
+
+
 result = math_operate(number1, number2, operation)
+result = calc_additional(result)
 print(result)
