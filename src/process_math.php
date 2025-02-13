@@ -30,7 +30,7 @@ if($result !== 0) {
       <li>Number2: <?= $number2 ?></li>
       <li>Result: <?= $output[0] ?></li>
     </ul>
-    <p>This result was processed on my EC2 instance with Public IP: 18.212.159.224</p>
+    <p>This result was processed on my EC2 instance with Public IP: </p>
     <p>Access the application via Load Balancer URL: http://math-operation-server-alg-740747584.us-east-1.elb.amazonaws.com/math_form.php</p>
     <a href='/math_form.php'>Back to form</a>
   </body>
